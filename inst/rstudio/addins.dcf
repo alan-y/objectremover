@@ -1,0 +1,4 @@
+Name: Remove Objects
+Description: remove objects from the R global environment
+Binding: object_remove
+Interactive: false
