@@ -1,6 +1,6 @@
 Package: objectremover
 Title: Remove objects from the R global environment
-Version: 0.5
+Version: 0.6
 Authors@R: person("Alan", "Yeung", email = "alan.yeung@nhs.net", role = c("aut", "cre"))
 Description: Clears objects from the global environment according to a pattern.
 Depends: R (>= 3.5.0)
