@@ -8,11 +8,11 @@ the Global environment.
 
 ## Installation
 
-You can install the released version of objectremover from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the development version of objectremover from Github
+with:
 
 ``` r
-install.packages("objectremover")
+devtools::install_.packages_github("alan-y/objectremover")
 ```
 
 ## Example
