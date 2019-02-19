@@ -1,5 +1,7 @@
 #' object_remove
 #' @description Removes objects from the global environment according to a pattern for easy use as an RStudio addin
+#'
+#' @export
 object_remove <- function() {
     ui <- miniUI::miniPage(
         miniUI::gadgetTitleBar("Object Remover"),
