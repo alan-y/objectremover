@@ -12,7 +12,7 @@ You can install the development version of objectremover from Github
 with:
 
 ``` r
-devtools::install_.packages_github("alan-y/objectremover")
+devtools::install_github("alan-y/objectremover")
 ```
 
 ## Example

@@ -20,8 +20,8 @@ objectremover is an RStudio addin to assist with clearing objects from the Globa
 
 You can install the development version of objectremover from Github with:
 
-``` r
-devtools::install_.packages_github("alan-y/objectremover")
+```{r install, eval = FALSE} 
+devtools::install_github("alan-y/objectremover")
 ```
 
 ## Example
