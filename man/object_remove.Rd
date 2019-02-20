@@ -9,3 +9,8 @@ object_remove()
 \description{
 Removes objects from the global environment according to a pattern for easy use as an RStudio addin
 }
+\examples{
+if (interactive()) {
+  object_remove()
+}
+}
