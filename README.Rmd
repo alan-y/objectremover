@@ -16,16 +16,21 @@ knitr::opts_chunk$set(
 
 # objectremover
 
-objectremover is an RStudio addin to assist with clearing objects from the Global environment.
+`objectremover` is an RStudio addin to assist with clearing objects from the Global environment. Features include removing objects by
+
+* Starting pattern of object name
+* Ending pattern of object name
+* Regular expression
+* Object type (dataframe, function and other)
 
 ## Installation
 
-You can install the development version of objectremover from Github with:
+You can install the development version of `objectremover` from Github with:
 
 ```{r install, eval = FALSE} 
 devtools::install_github("alan-y/objectremover")
 ```
 
-## Example
+## Use
 
-This is an RStudio add in that should be used interactively.
+After installing the package, the add-in will be available in Rstudio from the **Addins** dropdown menu. Select "Remove Objects" (under the heading OBJECTREMOVER) from the menu to run.
