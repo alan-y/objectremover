@@ -25,7 +25,7 @@ knitr::opts_chunk$set(
 
 ## Installation
 
-You can install the development version of `objectremover` from Github with:
+You can install the development version of `objectremover` from Github with
 
 ```{r install, eval = FALSE} 
 devtools::install_github("alan-y/objectremover")

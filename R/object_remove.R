@@ -16,7 +16,7 @@ object_remove <- function() {
                                   "Ending With" = "ending with",
                                   "According to Regex Pattern" = "according to the regex pattern")),
 
-            shiny::textInput("txt", "Text Pattern", "z"),
+            shiny::textInput("txt", "Text Pattern", ""),
 
             shiny::checkboxGroupInput("checkGroup",
                                       label = shiny::strong("Object Types"),
