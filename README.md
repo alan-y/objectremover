@@ -16,6 +16,8 @@ the Global environment. Features include removing objects by
 
 ## Installation
 
+Install the package with `install.packages("objectremover")`.
+
 You can install the development version of `objectremover` from Github
 with:
 

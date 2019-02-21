@@ -1,4 +1,8 @@
-This is my first submission
+## Resubmission
+This is a resubmission. In this version I have:
+
+* Converted the DESCRIPTION title to title case.
+* Changed the DESCRIPTION title to show it is an RStudio addin to help remove objects by pattern and type.
 
 ## Test environments
 * Windows 10, R 3.5.2 (local)
