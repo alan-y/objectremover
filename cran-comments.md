@@ -1,7 +1,7 @@
 ## Resubmission
 This is a resubmission. In this version I have:
 
-* Converted the DESCRIPTION title to title case (apologies for mistakes last submission).
+* Written software names in single quotes (e.g. 'RStudio') for Title and Description
 * Main benefit: easily remove only specific objects, e.g. dataframes or functions
 * Another benefit: no regex knowledge required to quickly remove objects
 
