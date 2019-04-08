@@ -3,6 +3,7 @@
 
 [![Build
 Status](https://travis-ci.org/alan-y/objectremover.svg?branch=master)](https://travis-ci.org/alan-y/objectremover)
+[![](https://cranlogs.r-pkg.org/badges/objectremover)](https://cran.r-project.org/package=objectremover)
 
 # objectremover
 
