@@ -17,8 +17,14 @@ the Global environment. Features include removing objects by
 
 ## Installation
 
-You can install the development version of `objectremover` from Github
-with
+Install `objectremover` with
+
+``` r
+install.packages("objectremover")
+```
+
+Alternatively, you can install the development version of
+`objectremover` with
 
 ``` r
 devtools::install_github("alan-y/objectremover")

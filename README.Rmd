@@ -25,10 +25,15 @@ knitr::opts_chunk$set(
 * Object type (dataframe, function and other)
 
 ## Installation
-
-You can install the development version of `objectremover` from Github with
+Install `objectremover` with
 
 ```{r install, eval = FALSE} 
+install.packages("objectremover")
+```
+
+Alternatively, you can install the development version of `objectremover` with
+
+```{r install_devel, eval = FALSE} 
 devtools::install_github("alan-y/objectremover")
 ```
 
