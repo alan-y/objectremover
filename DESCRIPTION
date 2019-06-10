@@ -14,5 +14,6 @@ RoxygenNote: 6.1.1
 Imports: 
     shiny,
     miniUI,
-    rstudioapi,
     shinyalert
+Suggests: 
+    rstudioapi
