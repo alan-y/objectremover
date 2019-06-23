@@ -34,6 +34,6 @@ devtools::install_github("alan-y/objectremover")
 
 ## Use
 
-After installing the package, the add-in will be available in Rstudio
+After installing the package, the add-in will be available in RStudio
 from the **Addins** dropdown menu. Select “Remove Objects” (under the
 heading OBJECTREMOVER) from the menu to run.
