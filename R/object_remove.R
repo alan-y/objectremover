@@ -26,7 +26,9 @@ object_remove <- function() {
                                       selected = 1L:3L),
 
             shiny::strong("Objects to be removed"),
-            shiny::verbatimTextOutput("objects")
+            shiny::verbatimTextOutput("objects"),
+
+            shinyalert::useShinyalert()
         )
     )
 
@@ -65,14 +67,27 @@ object_remove <- function() {
             reactiveObj()
         })
 
-        # When the Done button is clicked, return a value
+        # When the Done button is clicked, open a warning popup to confirm
         shiny::observeEvent(input$done, {
-            rm(list = reactiveObj(), envir = globalenv())
-            shiny::stopApp(message(
-                "Removed objects (",
-                paste(c("Data Frame", "Function", "Other")[as.integer(input$checkGroup)],
-                      collapse = ", "),
-                ") ", input$pattern, " '", input$txt, "'")
+            shinyalert::shinyalert(
+                text = paste0("Removing Objects:\n (",
+                              paste(c("Data Frame", "Function", "Other")[as.integer(input$checkGroup)],
+                                    collapse = ", "),
+                              ") ", input$pattern, " '", input$txt, "'",
+                              "\nAre you sure (Y/N)?"),
+                type = "input",
+                inputValue = "Y",
+                callbackR = function(x) {
+                    if (x == "Y") {
+                        rm(list = reactiveObj(), envir = globalenv())
+                        shiny::stopApp(message(
+                            "Removed objects (",
+                            paste(c("Data Frame", "Function", "Other")[as.integer(input$checkGroup)],
+                                  collapse = ", "),
+                            ") ", input$pattern, " '", input$txt, "'")
+                        )
+                    }
+                }
             )
         })
 
