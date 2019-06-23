@@ -1,5 +1,6 @@
 ## Test environments
 * Windows 10, R 3.6.0 (local)
+* win-builder: R-devel
 * Windows Server 2008 32/64 bit (on R-Hub), R-devel
 * Ubuntu Linux 16.04 (on R-Hub), R 3.6.0
 * Fedora Linux (on R-Hub), R-devel
