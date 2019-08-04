@@ -1,13 +1,16 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# objectremover <img src='inst/img/objectremover_hex.png' align="right" height="139" />
+
+<!-- badges: start -->
+
 [![Build
 Status](https://travis-ci.org/alan-y/objectremover.svg?branch=master)](https://travis-ci.org/alan-y/objectremover)
 [![cran
 checks](https://cranchecks.info/badges/summary/objectremover)](https://cran.r-project.org/web/checks/check_results_objectremover.html)
 [![](https://cranlogs.r-pkg.org/badges/objectremover)](https://cran.r-project.org/package=objectremover)
-
-# objectremover
+<!-- badges: end -->
 
 `objectremover` is an RStudio addin to assist with clearing objects from
 the Global environment. Features include removing objects by
