@@ -1,8 +1,8 @@
 ^cran-comments\.md$
 .git
 .gitignore
-.travis.yml
 ^README\.Rmd$
 ^LICENSE\.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.github$
