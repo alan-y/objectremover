@@ -16,9 +16,9 @@ knitr::opts_chunk$set(
 # objectremover <img src='inst/img/objectremover_hex.png' align="right" height="139" />
 
 <!-- badges: start -->
-[![Build Status](https://travis-ci.org/alan-y/objectremover.svg?branch=master)](https://travis-ci.org/alan-y/objectremover)
 [![cran checks](https://cranchecks.info/badges/summary/objectremover)](https://cran.r-project.org/web/checks/check_results_objectremover.html)
 [![](https://cranlogs.r-pkg.org/badges/objectremover)](https://cran.r-project.org/package=objectremover)
+[![R-CMD-check](https://github.com/alan-y/objectremover/workflows/R-CMD-check/badge.svg)](https://github.com/alan-y/objectremover/actions)
 <!-- badges: end -->
 
 
