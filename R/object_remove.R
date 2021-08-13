@@ -27,8 +27,6 @@ object_remove <- function() {
 
             shiny::strong("Objects to be removed"),
             shiny::verbatimTextOutput("objects"),
-
-            shinyalert::useShinyalert()
         )
     )
 
@@ -69,26 +67,24 @@ object_remove <- function() {
 
         # When the Done button is clicked, open a warning popup to confirm
         shiny::observeEvent(input$done, {
-            shinyalert::shinyalert(
-                text = paste0("Removing Objects:\n (",
-                              paste(c("Data Frame", "Function", "Other")[as.integer(input$checkGroup)],
-                                    collapse = ", "),
-                              ") ", input$pattern, " '", input$txt, "'",
-                              "\nAre you sure (Y/N)?"),
-                type = "input",
-                inputValue = "Y",
-                callbackR = function(x) {
-                    if (x == "Y") {
-                        rm(list = reactiveObj(), envir = globalenv())
-                        shiny::stopApp(message(
-                            "Removed objects (",
-                            paste(c("Data Frame", "Function", "Other")[as.integer(input$checkGroup)],
-                                  collapse = ", "),
-                            ") ", input$pattern, " '", input$txt, "'")
-                        )
-                    }
-                }
-            )
+            msg <- paste0("Removing Objects:\n(",
+                          paste(c("Data Frame", "Function", "Other")[as.integer(input$checkGroup)],
+                                collapse = ", "),
+                          ") ", input$pattern, " '", input$txt, "'",
+                          "\nAre you sure?")
+
+            rm_confirm <- rstudioapi::showQuestion(title = "objectremover",
+                                                   message = msg)
+
+            if (rm_confirm) {
+                rm(list = reactiveObj(), envir = globalenv())
+                shiny::stopApp(message(
+                    "Removed objects (",
+                    paste(c("Data Frame", "Function", "Other")[as.integer(input$checkGroup)],
+                          collapse = ", "),
+                    ") ", input$pattern, " '", input$txt, "'")
+                )
+            }
         })
 
         shiny::observeEvent(input$cancel, {
