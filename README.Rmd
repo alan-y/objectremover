@@ -41,7 +41,7 @@ install.packages("objectremover")
 Alternatively, you can install the development version of `objectremover` with
 
 ```{r install_devel, eval = FALSE} 
-devtools::install_github("alan-y/objectremover")
+remotes::install_github("alan-y/objectremover", ref = "main")
 ```
 
 ## Use

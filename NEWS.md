@@ -1,3 +1,8 @@
+# objectremover 0.8.1
+
+* Updated readme and animated demo.
+* Added name to license.
+
 # objectremover 0.8
 
 * Removed dependency on shinyalert.
